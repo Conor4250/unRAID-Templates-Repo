@@ -13,7 +13,7 @@
   <Category>Security: Network:DNS Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Conor4250/unRAID-Templates-Repo/main/img/dnscrypt-proxy_logo.png</Icon>
+  <Icon>https://conor425.blob.core.windows.net/filesrv/pub/dnscrypt-proxy_logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
