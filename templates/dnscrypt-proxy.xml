@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DNSCrypt-Proxy</Name>
+  <Repository>klutchell/dnscrypt-proxy</Repository>
+  <Registry>https://hub.docker.com/r/klutchell/dnscrypt-proxy/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>dnscrypt-proxy is a flexible open-source DNS proxy written in Go, with support for encrypted DNS protocols.</Overview>
+  <Category>Security: Network:DNS Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1658068022</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>dnscrypt-proxy is a flexible open-source DNS proxy written in Go, with support for encrypted DNS protocols.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/dnscrypt-proxy/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="TCP DNS Port" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
+  <Config Name="UDP DNS Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
+</Container>
